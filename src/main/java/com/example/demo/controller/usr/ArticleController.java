@@ -17,10 +17,23 @@ import lombok.Data;
 public class ArticleController {
 	@Autowired
 	ArticleService articleService;
+	
 	@RequestMapping("/usr/article/list")
 	String ShowList(Model model) {
 		List<Article> articles = articleService.getArticles();
 		model.addAttribute("articles", articles);
-		return("usr/article/list");
+		return "usr/article/list";
+	}
+	
+	@RequestMapping("/usr/article/detail")
+	String ShowDetail(Model model, int id) {
+		System.out.println("id : " + id);
+		
+		Article article = articleService.getArticleById(id);
+		model.addAttribute("article", article);
+		
+		System.out.println("article" + article);
+
+		return "usr/article/detail";
 	}
 }

@@ -6,4 +6,11 @@
 <select id="getArticles" resultType="Article">
 SELECT * FROM article
 </select>
+
+<!-- 전달받은 파라미터는 #{ } 표현식을 사용해서 처리 -->
+<select id="getArticleById" resultType="Article">
+SELECT * 
+FROM article 
+WHERE id = #{id}
+</select>
 </mapper>

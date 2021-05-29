@@ -8,14 +8,16 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>게시물 리스트</h1>
-<c:forEach items="${articles }" var="article">
-id : <a href="./view"> ${article.id } </a><br>
+<h1>게시물 상세 페이지</h1>
+id : ${article.id } <br>
+제목 :${article.title } <br>
 날짜 : ${article.regDate } <br>
 갱신 날짜 : ${article.updateDate } <br>
-제목 :<a href="view.jsp"> ${article.title } </a> <br>
 내용 : ${article.content } <br>
-<hr />
-</c:forEach>
+
+
+<button>목록</button>
+<button>수정</button>
+<button>삭제</button>
 </body>
 </html>
