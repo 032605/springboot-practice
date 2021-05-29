@@ -5230,3 +5230,1603 @@ WHERE id = 5
 2021-05-30 02:16:51 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
 2021-05-30 02:16:51 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
 2021-05-30 02:16:51 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:17:03 [INFO ] o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 02:17:03 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-30 02:17:03 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-30 02:17:08 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Starting...
+2021-05-30 02:17:08 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Start completed.
+2021-05-30 02:17:08 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+121. DELETE FROM article
+WHERE id = 6
+ {executed in 2 msec}
+2021-05-30 02:17:09 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+121. SELECT * FROM article
+ {executed in 1 msec}
+2021-05-30 02:17:09 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|------|--------|
+|id |regdate             |updatedate          |title |content |
+|---|--------------------|--------------------|------|--------|
+|7  |2021-05-30 02:16:58 |2021-05-30 02:16:58 |제목2   |내용2     |
+|8  |2021-05-30 02:16:58 |2021-05-30 02:16:58 |제목3   |내용3     |
+|---|--------------------|--------------------|------|--------|
+
+2021-05-30 02:20:33 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:20:33 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown initiated...
+2021-05-30 02:20:33 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-13 - Shutdown completed.
+2021-05-30 02:20:33 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:20:33 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:20:33 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:20:33 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:20:33 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:20:33 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:20:33 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:20:33 [INFO ] o.a.c.c.C.[Tomcat-4].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:20:33 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 333 ms
+2021-05-30 02:20:33 [WARN ] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleController' defined in file [C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes\com\example\demo\controller\usr\ArticleController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+2021-05-30 02:20:33 [INFO ] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-30 02:20:33 [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-30 02:20:33 [ERROR] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleController' defined in file [C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes\com\example\demo\controller\usr\ArticleController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.example.demo.ValueDemoApplication.main(ValueDemoApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at com.example.demo.controller.usr.ArticleController.<init>(ArticleController.java:49)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	... 24 common frames omitted
+2021-05-30 02:20:57 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:20:57 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:20:57 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:20:57 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:20:57 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:20:57 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:20:57 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:20:57 [INFO ] o.a.c.c.C.[Tomcat-5].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:20:57 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 422 ms
+2021-05-30 02:20:57 [WARN ] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleController' defined in file [C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes\com\example\demo\controller\usr\ArticleController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+2021-05-30 02:20:57 [INFO ] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-30 02:20:57 [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-30 02:20:58 [ERROR] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleController' defined in file [C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes\com\example\demo\controller\usr\ArticleController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.example.demo.ValueDemoApplication.main(ValueDemoApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at com.example.demo.controller.usr.ArticleController.<init>(ArticleController.java:49)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	... 24 common frames omitted
+2021-05-30 02:21:26 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:21:26 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:21:26 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:21:26 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:21:26 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:21:26 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:21:26 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:21:26 [INFO ] o.a.c.c.C.[Tomcat-6].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:21:26 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 532 ms
+2021-05-30 02:21:26 [WARN ] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleController' defined in file [C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes\com\example\demo\controller\usr\ArticleController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+2021-05-30 02:21:26 [INFO ] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-30 02:21:26 [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-30 02:21:26 [ERROR] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleController' defined in file [C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes\com\example\demo\controller\usr\ArticleController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.example.demo.ValueDemoApplication.main(ValueDemoApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at com.example.demo.controller.usr.ArticleController.<init>(ArticleController.java:49)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	... 24 common frames omitted
+2021-05-30 02:21:41 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:21:41 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:21:41 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:21:41 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:21:41 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:21:41 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:21:41 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:21:41 [INFO ] o.a.c.c.C.[Tomcat-7].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:21:41 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 528 ms
+2021-05-30 02:21:41 [WARN ] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleController' defined in file [C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes\com\example\demo\controller\usr\ArticleController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+2021-05-30 02:21:41 [INFO ] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-30 02:21:41 [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-30 02:21:41 [ERROR] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleController' defined in file [C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes\com\example\demo\controller\usr\ArticleController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.example.demo.ValueDemoApplication.main(ValueDemoApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at com.example.demo.controller.usr.ArticleController.<init>(ArticleController.java:49)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	... 24 common frames omitted
+2021-05-30 02:21:58 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:21:58 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:21:59 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:21:59 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:21:59 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:21:59 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:21:59 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:21:59 [INFO ] o.a.c.c.C.[Tomcat-8].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:21:59 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 407 ms
+2021-05-30 02:21:59 [WARN ] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleController' defined in file [C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes\com\example\demo\controller\usr\ArticleController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+2021-05-30 02:21:59 [INFO ] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2021-05-30 02:21:59 [INFO ] o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-30 02:21:59 [ERROR] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'articleController' defined in file [C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes\com\example\demo\controller\usr\ArticleController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:337)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1336)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1325)
+	at com.example.demo.ValueDemoApplication.main(ValueDemoApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.controller.usr.ArticleController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at com.example.demo.controller.usr.ArticleController.<init>(ArticleController.java:49)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212)
+	... 24 common frames omitted
+2021-05-30 02:22:37 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:22:37 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:22:37 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:22:37 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:22:37 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:22:37 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:22:37 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:22:37 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:22:37 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 554 ms
+2021-05-30 02:22:38 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:22:38 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:22:38 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:22:38 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.816 seconds (JVM running for 2555.03)
+2021-05-30 02:22:38 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:22:38 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:22:38 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:22:43 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:22:43 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:22:43 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:22:44 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:22:44 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:22:44 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:22:44 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:22:44 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:22:44 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:22:44 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 371 ms
+2021-05-30 02:22:44 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:22:44 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:22:44 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:22:44 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.605 seconds (JVM running for 2561.295)
+2021-05-30 02:22:44 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:22:44 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:22:44 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:23:04 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:23:04 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:23:04 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:23:04 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:23:04 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:23:04 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:23:04 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:23:04 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:23:04 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:23:04 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 339 ms
+2021-05-30 02:23:04 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:23:04 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:23:04 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:23:04 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.532 seconds (JVM running for 2581.722)
+2021-05-30 02:23:04 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:23:04 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:23:04 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:23:17 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:23:17 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:23:17 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:23:17 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:23:17 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:23:17 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:23:17 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:23:17 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:23:17 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:23:17 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 416 ms
+2021-05-30 02:23:18 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:23:18 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:23:18 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:23:18 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.665 seconds (JVM running for 2595.161)
+2021-05-30 02:23:18 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:23:18 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:23:18 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:24:46 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:24:46 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:24:46 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:24:47 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:24:47 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:24:47 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:24:47 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:24:47 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:24:47 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:24:47 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 438 ms
+2021-05-30 02:24:47 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:24:47 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:24:47 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:24:47 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.701 seconds (JVM running for 2684.279)
+2021-05-30 02:24:47 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:24:47 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:24:47 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:25:19 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:25:19 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:25:19 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:25:19 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:25:19 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:25:19 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:25:19 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:25:19 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:25:20 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:25:20 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 405 ms
+2021-05-30 02:25:20 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:25:20 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:25:20 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:25:20 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.642 seconds (JVM running for 2717.111)
+2021-05-30 02:25:20 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:25:20 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:25:20 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:25:24 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:25:24 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:25:24 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:25:25 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:25:25 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:25:25 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:25:25 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:25:25 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:25:25 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:25:25 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 565 ms
+2021-05-30 02:25:25 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:25:25 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:25:25 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:25:25 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.755 seconds (JVM running for 2722.561)
+2021-05-30 02:25:25 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:25:25 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:25:25 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:30:32 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 02:30:32 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-30 02:30:32 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-30 02:30:32 [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional int parameter 'id' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+java.lang.IllegalStateException: Optional int parameter 'id' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:263)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:116)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-30 02:30:46 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Starting...
+2021-05-30 02:30:46 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Start completed.
+2021-05-30 02:30:46 [ERROR] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+131. UPDATE article
+SET content = NULL
+WHERE id = 8
+ {FAILED after 3 msec}
+java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy57.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy103.modifyArticleById(Unknown Source)
+	at com.example.demo.service.ArticleService.modifyArticleById(ArticleService.java:25)
+	at com.example.demo.controller.usr.ArticleController.ShowdoModify(ArticleController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-30 02:30:46 [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null
+### The error may exist in com/example/demo/dao/ArticleDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE article SET content = ? WHERE id = ?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null
+; Column 'content' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'content' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy57.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy103.modifyArticleById(Unknown Source)
+	at com.example.demo.service.ArticleService.modifyArticleById(ArticleService.java:25)
+	at com.example.demo.controller.usr.ArticleController.ShowdoModify(ArticleController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-30 02:31:22 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:31:22 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown initiated...
+2021-05-30 02:31:22 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-14 - Shutdown completed.
+2021-05-30 02:31:22 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:31:22 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:31:22 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:31:22 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:31:22 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:31:22 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:31:22 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:31:22 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:31:22 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 329 ms
+2021-05-30 02:31:22 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:31:22 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:31:22 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:31:22 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.496 seconds (JVM running for 3079.624)
+2021-05-30 02:31:22 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:31:22 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:31:22 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:31:37 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:31:37 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:31:37 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:31:38 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:31:38 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:31:38 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:31:38 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:31:38 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:31:38 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:31:38 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 469 ms
+2021-05-30 02:31:38 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:31:38 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:31:38 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:31:38 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.803 seconds (JVM running for 3095.337)
+2021-05-30 02:31:38 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:31:38 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:31:38 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:31:45 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:31:46 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:31:46 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:31:46 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:31:46 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:31:46 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:31:46 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:31:46 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:31:46 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:31:46 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 419 ms
+2021-05-30 02:31:46 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:31:46 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:31:46 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:31:46 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.69 seconds (JVM running for 3103.824)
+2021-05-30 02:31:46 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:31:46 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:31:46 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:33:16 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:33:17 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:33:17 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:33:17 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:33:17 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:33:17 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:33:17 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:33:17 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:33:17 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:33:17 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 626 ms
+2021-05-30 02:33:17 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:33:17 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:33:17 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:33:17 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.883 seconds (JVM running for 3194.916)
+2021-05-30 02:33:17 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:33:17 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:33:17 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:33:22 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 02:33:22 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-30 02:33:22 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-05-30 02:33:22 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Starting...
+2021-05-30 02:33:22 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Start completed.
+2021-05-30 02:33:22 [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'content' not found. Available parameters are [id, param1]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'content' not found. Available parameters are [id, param1]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:212)
+	at org.apache.ibatis.reflection.wrapper.MapWrapper.get(MapWrapper.java:45)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.defaults.DefaultParameterHandler.setParameters(DefaultParameterHandler.java:79)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.parameterize(PreparedStatementHandler.java:94)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.parameterize(RoutingStatementHandler.java:64)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:88)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:49)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy57.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy107.modifyArticleById(Unknown Source)
+	at com.example.demo.service.ArticleService.modifyArticleById(ArticleService.java:25)
+	at com.example.demo.controller.usr.ArticleController.ShowdoModify(ArticleController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-30 02:36:36 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:36:36 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown initiated...
+2021-05-30 02:36:36 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-15 - Shutdown completed.
+2021-05-30 02:36:36 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:36:36 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:36:36 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:36:36 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:36:36 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:36:36 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:36:36 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:36:36 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:36:36 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 408 ms
+2021-05-30 02:36:36 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:36:36 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:36:36 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:36:36 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.604 seconds (JVM running for 3393.882)
+2021-05-30 02:36:36 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:36:36 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:36:36 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:36:51 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:36:51 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:36:51 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:36:52 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:36:52 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:36:52 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:36:52 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:36:52 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:36:52 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:36:52 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 404 ms
+2021-05-30 02:36:52 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:36:52 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:36:52 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:36:52 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.679 seconds (JVM running for 3409.508)
+2021-05-30 02:36:52 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:36:52 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:36:52 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:36:54 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:36:55 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:36:55 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:36:55 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:36:55 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:36:55 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:36:55 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:36:55 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:36:55 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:36:55 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 716 ms
+2021-05-30 02:36:56 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:36:56 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:36:56 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:36:56 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.917 seconds (JVM running for 3413.111)
+2021-05-30 02:36:56 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:36:56 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:36:56 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:36:57 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:36:57 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:36:57 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:36:58 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:36:58 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:36:58 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:36:58 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:36:58 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:36:58 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:36:58 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 448 ms
+2021-05-30 02:36:58 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:36:58 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:36:58 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:36:58 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.704 seconds (JVM running for 3415.513)
+2021-05-30 02:36:58 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:36:58 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:36:58 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:37:04 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:37:04 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:37:04 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:37:04 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:37:04 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:37:04 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:37:04 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:37:04 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:37:04 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:37:04 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 452 ms
+2021-05-30 02:37:04 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:37:04 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:37:04 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:37:04 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.658 seconds (JVM running for 3421.918)
+2021-05-30 02:37:04 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:37:04 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:37:04 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:37:32 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:37:33 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:37:33 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:37:33 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:37:33 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:37:33 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:37:33 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:37:33 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:37:33 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:37:33 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 458 ms
+2021-05-30 02:37:33 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:37:33 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:37:33 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:37:33 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.725 seconds (JVM running for 3450.904)
+2021-05-30 02:37:33 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:37:33 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:37:33 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:37:53 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:37:54 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:37:54 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:37:54 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:37:54 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:37:54 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:37:54 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:37:54 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:37:54 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:37:54 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 604 ms
+2021-05-30 02:37:54 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:37:54 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:37:54 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:37:54 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.885 seconds (JVM running for 3471.824)
+2021-05-30 02:37:54 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:37:54 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:37:54 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:38:19 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:38:20 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:38:20 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:38:20 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:38:20 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:38:20 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:38:20 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:38:20 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:38:20 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:38:20 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 376 ms
+2021-05-30 02:38:20 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:38:20 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:38:20 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:38:20 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.563 seconds (JVM running for 3497.534)
+2021-05-30 02:38:20 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:38:20 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:38:20 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:39:04 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:39:05 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:39:05 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:39:05 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:39:05 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:39:05 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:39:05 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:39:05 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:39:05 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:39:05 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 423 ms
+2021-05-30 02:39:05 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:39:05 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:39:05 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:39:05 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.725 seconds (JVM running for 3542.857)
+2021-05-30 02:39:05 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:39:05 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:39:05 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:40:06 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:40:06 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:40:06 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:40:07 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:40:07 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:40:07 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:40:07 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:40:07 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:40:07 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:40:07 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 522 ms
+2021-05-30 02:40:07 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:40:07 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:40:07 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:40:07 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.762 seconds (JVM running for 3604.533)
+2021-05-30 02:40:07 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:40:07 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:40:07 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:40:52 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 02:40:52 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-30 02:40:52 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-30 02:40:52 [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.demo.dao.ArticleDao.modifyArticle] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.demo.dao.ArticleDao.modifyArticle
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:115)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:102)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy117.modifyArticle(Unknown Source)
+	at com.example.demo.service.ArticleService.modifyArticle(ArticleService.java:25)
+	at com.example.demo.controller.usr.ArticleController.ShowdoModify(ArticleController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-30 02:41:10 [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.demo.dao.ArticleDao.modifyArticle] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.demo.dao.ArticleDao.modifyArticle
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:115)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:102)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy117.modifyArticle(Unknown Source)
+	at com.example.demo.service.ArticleService.modifyArticle(ArticleService.java:25)
+	at com.example.demo.controller.usr.ArticleController.ShowdoModify(ArticleController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-30 02:41:20 [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.demo.dao.ArticleDao.modifyArticle] with root cause
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.example.demo.dao.ArticleDao.modifyArticle
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:235)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:115)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1708)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:102)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy117.modifyArticle(Unknown Source)
+	at com.example.demo.service.ArticleService.modifyArticle(ArticleService.java:25)
+	at com.example.demo.controller.usr.ArticleController.ShowdoModify(ArticleController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-30 02:42:13 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:42:14 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:42:14 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:42:14 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:42:14 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:42:14 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:42:14 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:42:14 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:42:14 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:42:14 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 512 ms
+2021-05-30 02:42:14 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:42:14 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:42:14 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:42:14 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.75 seconds (JVM running for 3731.642)
+2021-05-30 02:42:14 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:42:14 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:42:14 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:42:18 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 02:42:18 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-30 02:42:18 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-30 02:42:18 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Starting...
+2021-05-30 02:42:18 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Start completed.
+2021-05-30 02:42:18 [ERROR] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+151. UPDATE article
+SET updateDate = now(),
+title = NULL,
+content = '내용22'
+WHERE id = 7
+ {FAILED after 1 msec}
+java.sql.SQLIntegrityConstraintViolationException: Column 'title' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy57.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy118.modifyArticle(Unknown Source)
+	at com.example.demo.service.ArticleService.modifyArticle(ArticleService.java:25)
+	at com.example.demo.controller.usr.ArticleController.ShowdoModify(ArticleController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-30 02:42:18 [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'title' cannot be null
+### The error may exist in com/example/demo/dao/ArticleDao.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: UPDATE article SET updateDate = now(), title = ?, content = ? WHERE id = ?
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'title' cannot be null
+; Column 'title' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'title' cannot be null] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Column 'title' cannot be null
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy.execute(PreparedStatementSpy.java:443)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy57.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:287)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy118.modifyArticle(Unknown Source)
+	at com.example.demo.service.ArticleService.modifyArticle(ArticleService.java:25)
+	at com.example.demo.controller.usr.ArticleController.ShowdoModify(ArticleController.java:53)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-30 02:42:51 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+151. UPDATE article
+SET updateDate = now(),
+title = '제목11',
+content = '내용22'
+WHERE id = 7
+ {executed in 3 msec}
+2021-05-30 02:42:51 [WARN ] o.s.w.s.r.ResourceHttpRequestHandler - Path with "WEB-INF" or "META-INF": [WEB-INF/jsp/<script> alert('7번 글을 수정하였습니다.')/usr/article/detail]
+2021-05-30 02:43:19 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+151. UPDATE article
+SET updateDate = now(),
+title = '제목3',
+content = '내용3'
+WHERE id = 8
+ {executed in 1 msec}
+2021-05-30 02:43:19 [WARN ] o.s.w.s.r.ResourceHttpRequestHandler - Path with "WEB-INF" or "META-INF": [WEB-INF/jsp/<script> alert('8번 글을 수정하였습니다.')/usr/article/detail]
+2021-05-30 02:44:35 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:44:35 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown initiated...
+2021-05-30 02:44:35 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-16 - Shutdown completed.
+2021-05-30 02:44:36 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:44:36 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:44:36 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:44:36 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:44:36 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:44:36 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:44:36 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:44:36 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:44:36 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 520 ms
+2021-05-30 02:44:36 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:44:36 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:44:36 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:44:36 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.833 seconds (JVM running for 3873.713)
+2021-05-30 02:44:36 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:44:36 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:44:36 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:44:46 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 02:44:46 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-30 02:44:46 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-30 02:44:46 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Starting...
+2021-05-30 02:44:46 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Start completed.
+2021-05-30 02:44:46 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+161. UPDATE article
+SET updateDate = now(),
+title = '제목4',
+content = '내용4'
+WHERE id = 8
+ {executed in 7 msec}
+2021-05-30 02:44:47 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+161. SELECT * 
+FROM article 
+WHERE id = 8
+ {executed in 1 msec}
+2021-05-30 02:44:47 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|------|--------|
+|id |regdate             |updatedate          |title |content |
+|---|--------------------|--------------------|------|--------|
+|8  |2021-05-30 02:16:58 |2021-05-30 02:44:46 |제목4   |내용4     |
+|---|--------------------|--------------------|------|--------|
+
+2021-05-30 02:46:58 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:46:58 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown initiated...
+2021-05-30 02:46:58 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-17 - Shutdown completed.
+2021-05-30 02:46:58 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:46:58 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:46:58 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:46:58 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:46:58 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:46:58 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:46:59 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:46:59 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:46:59 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 403 ms
+2021-05-30 02:46:59 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:46:59 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:46:59 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:46:59 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.6 seconds (JVM running for 4016.132)
+2021-05-30 02:46:59 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:46:59 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:46:59 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:48:44 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:48:44 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:48:44 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:48:45 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:48:45 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:48:45 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:48:45 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:48:45 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:48:45 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:48:45 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 575 ms
+2021-05-30 02:48:45 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:48:45 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:48:45 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:48:45 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.903 seconds (JVM running for 4122.631)
+2021-05-30 02:48:45 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:48:45 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:48:45 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:48:48 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:48:48 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:48:48 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:48:48 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:48:48 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:48:48 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:48:48 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:48:48 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:48:48 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:48:48 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 426 ms
+2021-05-30 02:48:48 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:48:48 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:48:48 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:48:48 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.632 seconds (JVM running for 4125.938)
+2021-05-30 02:48:48 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:48:48 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:48:48 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:49:02 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 02:49:02 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-30 02:49:02 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-30 02:49:02 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Starting...
+2021-05-30 02:49:02 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Start completed.
+2021-05-30 02:49:02 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+171. UPDATE article
+ SET updateDate = now(),
+
+		title = '제목3',
+
+		content = '내용3' 
+WHERE id = 8
+ {executed in 4 msec}
+2021-05-30 02:49:04 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+171. SELECT * 
+FROM article 
+WHERE id = 8
+ {executed in 1 msec}
+2021-05-30 02:49:04 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|------|--------|
+|id |regdate             |updatedate          |title |content |
+|---|--------------------|--------------------|------|--------|
+|8  |2021-05-30 02:16:58 |2021-05-30 02:49:02 |제목3   |내용3     |
+|---|--------------------|--------------------|------|--------|
+
+2021-05-30 02:49:13 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+171. UPDATE article
+ SET updateDate = now(),
+
+		title = '제목21' 
+WHERE id = 7
+ {executed in 2 msec}
+2021-05-30 02:49:14 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+171. SELECT * 
+FROM article 
+WHERE id = 7
+ {executed in 0 msec}
+2021-05-30 02:49:14 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|------|--------|
+|id |regdate             |updatedate          |title |content |
+|---|--------------------|--------------------|------|--------|
+|7  |2021-05-30 02:16:58 |2021-05-30 02:49:13 |제목21  |내용22    |
+|---|--------------------|--------------------|------|--------|
+
+2021-05-30 02:50:09 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+171. UPDATE article
+ SET updateDate = now() 
+WHERE id = 7
+ {executed in 3 msec}
+2021-05-30 02:50:09 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+171. SELECT * 
+FROM article 
+WHERE id = 7
+ {executed in 1 msec}
+2021-05-30 02:50:09 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|------|--------|
+|id |regdate             |updatedate          |title |content |
+|---|--------------------|--------------------|------|--------|
+|7  |2021-05-30 02:16:58 |2021-05-30 02:50:09 |제목21  |내용22    |
+|---|--------------------|--------------------|------|--------|
+
+2021-05-30 02:50:48 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+171. UPDATE article
+ SET updateDate = now(),
+
+		content = 'ㅋㅋ' 
+WHERE id = 7
+ {executed in 3 msec}
+2021-05-30 02:50:49 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+171. SELECT * 
+FROM article 
+WHERE id = 7
+ {executed in 1 msec}
+2021-05-30 02:50:49 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|------|--------|
+|id |regdate             |updatedate          |title |content |
+|---|--------------------|--------------------|------|--------|
+|7  |2021-05-30 02:16:58 |2021-05-30 02:50:48 |제목21  |ㅋㅋ      |
+|---|--------------------|--------------------|------|--------|
+
+2021-05-30 02:51:34 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 02:51:34 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown initiated...
+2021-05-30 02:51:34 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-18 - Shutdown completed.
+2021-05-30 02:51:34 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 16792 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 02:51:34 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 02:51:34 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 02:51:34 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:51:34 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 02:51:34 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 02:51:34 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 02:51:34 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 02:51:34 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 373 ms
+2021-05-30 02:51:35 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 02:51:35 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 02:51:35 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 02:51:35 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.82 seconds (JVM running for 4292.272)
+2021-05-30 02:51:35 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 02:51:35 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 02:51:35 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 02:52:24 [INFO ] o.a.c.c.C.[Tomcat-9].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 02:52:24 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-30 02:52:24 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2021-05-30 02:52:24 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Starting...
+2021-05-30 02:52:24 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-19 - Start completed.
+2021-05-30 02:52:24 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+181. SELECT * 
+FROM article 
+WHERE id = 7
+ {executed in 1 msec}
+2021-05-30 02:52:25 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|------|--------|
+|id |regdate             |updatedate          |title |content |
+|---|--------------------|--------------------|------|--------|
+|7  |2021-05-30 02:16:58 |2021-05-30 02:50:48 |제목21  |ㅋㅋ      |
+|---|--------------------|--------------------|------|--------|
+
+2021-05-30 02:56:46 [INFO ] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2021-05-30 02:56:46 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC

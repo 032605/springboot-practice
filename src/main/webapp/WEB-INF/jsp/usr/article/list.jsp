@@ -10,11 +10,11 @@
 <body>
 <h1>게시물 리스트</h1>
 <c:forEach items="${articles }" var="article">
-id : <a href="./view"> ${article.id } </a><br>
+id : ${article.id }<br>
 날짜 : ${article.regDate } <br>
 갱신 날짜 : ${article.updateDate } <br>
-제목 :<a href="view.jsp"> ${article.title } </a> <br>
-내용 : ${article.content } <br>
+제목 :${article.title } <br>
+내용 : <inputy type="text" value="${article.content }"></inputy> <br>
 <hr />
 </c:forEach>
 </body>

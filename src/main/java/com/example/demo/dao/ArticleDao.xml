@@ -19,4 +19,18 @@ DELETE FROM article
 WHERE id = #{id}
 </delete>
 
+<update id="modifyArticle">
+UPDATE article
+<set> 
+	updateDate = now(),
+	<if test="title != null">
+		title = #{title},
+	</if>
+	<if test="content != null">
+		content = #{content},
+	</if>
+</set>
+WHERE id = #{id}
+</update>
+
 </mapper>

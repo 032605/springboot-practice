@@ -46,4 +46,14 @@ public class ArticleController {
 		//location.href로 이동하면 user가 backspace로 뒤로가기 가능함(주의)
 		return String.format("<script> alert('%d번 글을 삭제하였습니다.'); location.replace('/usr/article/list') </script>", id);
 	}
+
+
+@RequestMapping("/usr/article/doModify")
+@ResponseBody
+String ShowdoModify(Model model, int id, String title, String content) {
+	articleService.modifyArticle(id, title, content);
+
+	return String.format("<script> alert('%d번 글을 수정하였습니다.'); location.replace('/usr/article/detail?id=%d') </script>", id, id);
+	}
 }
+
