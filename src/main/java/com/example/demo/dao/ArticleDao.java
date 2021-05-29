@@ -13,4 +13,6 @@ public interface ArticleDao {
 
 	//MyBatis 공식 
 	Article getArticleById(@Param("id") int id);
+
+	void deleteArticleById(@Param("id") int id);
 }
