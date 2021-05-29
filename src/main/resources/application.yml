@@ -1,0 +1,30 @@
+spring:
+  profiles:
+    active: local # 기본적으로 local이 선택된다는 뜻
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+  datasource:
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:mysql://127.0.0.1:3306/value_demo?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true&zeroDateTimeNehavior=convertToNull
+    username: test
+    password: 1234
+mybatis:
+  type-aliases-package: com.example.demo.dto
+server:
+  error:
+    include-exception: true
+    include-stacktrace: always
+    include-message: always
+    include-binding-errors: always
+custom:
+  siteName: 벨류데모
+  logging:
+    dir: log
+    level: info
+
+---
+
+server:
+  port: 8080
