@@ -10,9 +10,9 @@ import com.example.demo.dto.Article;
 
 @Mapper
 public interface ArticleDao {
-	List<Article> getArticles();
+	List<Article> getArticles(Map<String, Object> param);
 
-	//MyBatis 공식 
+	//MyBatis 공식 @Param
 	Article getArticleById(@Param("id") int id);
 
 	void deleteArticleById(@Param("id") int id);

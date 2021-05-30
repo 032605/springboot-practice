@@ -5,7 +5,12 @@
 <mapper namespace="com.example.demo.dao.ArticleDao">
 <!-- 게시글 조회 -->
 <select id="getArticles" resultType="Article">
-SELECT * FROM article
+	SELECT * 
+	FROM article
+	ORDER BY id DESC
+	<if test="limitFrom != null and limitTake != null">
+		LIMIT #{limitFrom}, #{limitTake}
+	</if>
 </select>
 
 <!-- 전달받은 파라미터는 #{ } 표현식을 사용해서 처리 -->

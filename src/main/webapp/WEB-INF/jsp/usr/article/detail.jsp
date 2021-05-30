@@ -16,8 +16,17 @@ id : ${article.id } <br>
 내용 : ${article.content } <br>
 
 
-<button>목록</button>
-<button>수정</button>
-<button>삭제</button>
+<button onclick="location.href='list'">목록</button>
+<button onclick="location.href='modify?id=${article.id }'">수정</button>
+<button onclick="fn_delete(${article.id });return false;">삭제</button>
 </body>
+
+<script>
+
+function fn_delete(id){
+	if(confirm("삭제하시겠습니까?")){
+		location.href="doDelete?id="+id;
+	}
+}
+</script>
 </html>

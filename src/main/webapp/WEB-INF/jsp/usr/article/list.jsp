@@ -13,9 +13,11 @@
 id : ${article.id }<br>
 날짜 : ${article.regDate } <br>
 갱신 날짜 : ${article.updateDate } <br>
-제목 :${article.title } <br>
-내용 : <inputy type="text" value="${article.content }"></inputy> <br>
+제목 : <a href="detail?id=${article.id }">${article.title }</a> <br>
+내용 : ${article.content } <br>
 <hr />
 </c:forEach>
+	<button onclick="location.href='post'">글 작성</button>
+
 </body>
 </html>
