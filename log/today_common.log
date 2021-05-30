@@ -9015,3 +9015,250 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2021-05-30 16:53:41 [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 2021-05-30 16:53:41 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
 2021-05-30 16:53:41 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-05-30 17:12:52 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2021-05-30 17:12:52 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2021-05-30 17:12:52 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. INSERT INTO article
+	 SET regDate = NOW(),
+		updateDate = NOW(),
+
+			title = 'sadas',
+
+			content = 'sads'
+ {executed in 3 msec}
+2021-05-30 17:12:52 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+61. getGeneratedKeys on query: INSERT INTO article
+	 SET regDate = NOW(),
+		updateDate = NOW(),
+
+			title = 'sadas',
+
+			content = 'sads'
+ {executed in 0 msec}
+2021-05-30 17:12:52 [INFO ] jdbc.resultsettable - 
+|--------------|
+|generated_key |
+|--------------|
+|16            |
+|--------------|
+
+2021-05-30 17:12:53 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+61. SELECT * 
+FROM article 
+WHERE id = 16
+ {executed in 1 msec}
+2021-05-30 17:12:53 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|------|--------|
+|id |regdate             |updatedate          |title |content |
+|---|--------------------|--------------------|------|--------|
+|16 |2021-05-30 17:12:52 |2021-05-30 17:12:52 |sadas |sads    |
+|---|--------------------|--------------------|------|--------|
+
+2021-05-30 17:19:32 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 17:19:32 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2021-05-30 17:19:32 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2021-05-30 17:19:33 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 18748 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 17:19:33 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 17:19:33 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 17:19:33 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:19:33 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 17:19:33 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 17:19:33 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 17:19:33 [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 17:19:33 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 458 ms
+2021-05-30 17:19:33 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 17:19:33 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:19:33 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 17:19:33 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.735 seconds (JVM running for 4206.31)
+2021-05-30 17:19:33 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 17:19:33 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 17:19:33 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 17:19:44 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 17:19:44 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 18748 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 17:19:44 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 17:19:45 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 17:19:45 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:19:45 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 17:19:45 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 17:19:45 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 17:19:45 [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 17:19:45 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 520 ms
+2021-05-30 17:19:45 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 17:19:45 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:19:45 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 17:19:45 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.771 seconds (JVM running for 4217.975)
+2021-05-30 17:19:45 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 17:19:45 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 17:19:45 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 17:19:52 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 17:19:52 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 18748 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 17:19:52 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 17:19:52 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 17:19:52 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:19:52 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 17:19:52 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 17:19:53 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 17:19:53 [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 17:19:53 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 401 ms
+2021-05-30 17:19:53 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 17:19:53 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:19:53 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 17:19:53 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.635 seconds (JVM running for 4225.807)
+2021-05-30 17:19:53 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 17:19:53 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 17:19:53 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 17:20:06 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 17:20:07 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 18748 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 17:20:07 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 17:20:07 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 17:20:07 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:20:07 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 17:20:07 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 17:20:07 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 17:20:07 [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 17:20:07 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 636 ms
+2021-05-30 17:20:08 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 17:20:08 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:20:08 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 17:20:08 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.976 seconds (JVM running for 4240.77)
+2021-05-30 17:20:08 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 17:20:08 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 17:20:08 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 17:20:09 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 17:20:09 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 18748 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 17:20:09 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 17:20:10 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 17:20:10 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:20:10 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 17:20:10 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 17:20:10 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 17:20:10 [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 17:20:10 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 452 ms
+2021-05-30 17:20:10 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 17:20:10 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:20:10 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 17:20:10 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.628 seconds (JVM running for 4243.081)
+2021-05-30 17:20:10 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 17:20:10 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 17:20:10 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 17:21:26 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 17:21:26 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 18748 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 17:21:26 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 17:21:26 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 17:21:26 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:21:26 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 17:21:26 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 17:21:27 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 17:21:27 [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 17:21:27 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 455 ms
+2021-05-30 17:21:27 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 17:21:27 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:21:27 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 17:21:27 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.678 seconds (JVM running for 4319.839)
+2021-05-30 17:21:27 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 17:21:27 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 17:21:27 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 17:21:52 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 17:21:52 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 18748 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 17:21:52 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 17:21:52 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 17:21:52 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:21:52 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 17:21:52 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 17:21:52 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 17:21:52 [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 17:21:52 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 358 ms
+2021-05-30 17:21:53 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 17:21:53 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:21:53 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 17:21:53 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.62 seconds (JVM running for 4345.657)
+2021-05-30 17:21:53 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 17:21:53 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 17:21:53 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
+2021-05-30 17:25:56 [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-30 17:25:56 [INFO ] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-05-30 17:25:56 [INFO ] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2021-05-30 17:25:56 [ERROR] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Optional int parameter 'id' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.] with root cause
+java.lang.IllegalStateException: Optional int parameter 'id' is present but cannot be translated into a null value due to being declared as a primitive type. Consider declaring it as object wrapper for the corresponding primitive type.
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.handleNullValue(AbstractNamedValueMethodArgumentResolver.java:263)
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:116)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:121)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:170)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1063)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+2021-05-30 17:26:14 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2021-05-30 17:26:14 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2021-05-30 17:26:14 [DEBUG] jdbc.sqltiming -  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+71. SELECT * 
+FROM article 
+WHERE id = 15
+ {executed in 2 msec}
+2021-05-30 17:26:14 [INFO ] jdbc.resultsettable - 
+|---|--------------------|--------------------|------|--------|
+|id |regdate             |updatedate          |title |content |
+|---|--------------------|--------------------|------|--------|
+|15 |2021-05-30 16:51:35 |2021-05-30 16:51:35 |제목    |내용      |
+|---|--------------------|--------------------|------|--------|
+
+2021-05-30 17:31:47 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2021-05-30 17:31:47 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2021-05-30 17:31:47 [INFO ] com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2021-05-30 17:31:47 [INFO ] c.example.demo.ValueDemoApplication - Starting ValueDemoApplication using Java 15.0.2 on DESKTOP-IG7EVLE with PID 18748 (C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo\target\classes started by user in C:\Users\user\Documents\workspace-spring-tool-suite-4-4.10.0.RELEASE\value-demo)
+2021-05-30 17:31:47 [INFO ] c.example.demo.ValueDemoApplication - The following profiles are active: local
+2021-05-30 17:31:48 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-05-30 17:31:48 [INFO ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:31:48 [INFO ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-05-30 17:31:48 [INFO ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-05-30 17:31:48 [INFO ] org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-05-30 17:31:48 [INFO ] o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-05-30 17:31:48 [INFO ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 453 ms
+2021-05-30 17:31:48 [INFO ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-05-30 17:31:48 [INFO ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-05-30 17:31:48 [INFO ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-30 17:31:48 [INFO ] c.example.demo.ValueDemoApplication - Started ValueDemoApplication in 0.696 seconds (JVM running for 4940.889)
+2021-05-30 17:31:48 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state LivenessState changed to CORRECT
+2021-05-30 17:31:48 [INFO ] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2021-05-30 17:31:48 [INFO ] o.s.b.a.ApplicationAvailabilityBean - Application availability state ReadinessState changed to ACCEPTING_TRAFFIC

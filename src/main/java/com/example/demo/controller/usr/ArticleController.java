@@ -31,9 +31,7 @@ public class ArticleController {
 	}
 	
 	@RequestMapping("/usr/article/detail")
-	String ShowDetail(Model model, int id) {
-		System.out.println("id : " + id);
-		
+	String ShowDetail(Model model, int id) {	
 		Article article = articleService.getArticleById(id);
 		model.addAttribute("article", article);
 		
@@ -51,7 +49,16 @@ public class ArticleController {
 		return String.format("<script> alert('%d번 글을 삭제하였습니다.'); location.replace('/usr/article/list') </script>", id);
 	}
 
-
+@RequestMapping("/usr/article/modify")
+String ShowModify(Model model, int id) {
+	Article article = articleService.getArticleById(id);
+	model.addAttribute("article", article);
+	model.addAttribute("actionUrl", "doModify");
+	
+	return "/usr/article/post";
+	}
+	
+	
 @RequestMapping("/usr/article/doModify")
 @ResponseBody
 String doModify(int id, String title, String content) {
@@ -61,8 +68,8 @@ String doModify(int id, String title, String content) {
 	}
 
 @RequestMapping("/usr/article/post")
-String ShowPost() {
-
+String ShowPost(Model model) {
+	model.addAttribute("actionUrl", "doPost");
 	return "/usr/article/post";
 	}
 
