@@ -26,7 +26,9 @@ public class ArticleController {
 		List<Article> articles = articleService.getArticles(param);
 		
 		model.addAttribute("articles", articles);
-		return "usr/article/list";
+		model.addAttribute("name", "김나");
+
+		return "board/list";
 	}
 	
 	@RequestMapping("/usr/article/detail")
@@ -36,7 +38,7 @@ public class ArticleController {
 		
 		System.out.println("article" + article);
 
-		return "usr/article/detail";
+		return "board/detail";
 	}
 	
 	@RequestMapping("/usr/article/doDelete")
@@ -55,7 +57,7 @@ public class ArticleController {
 		model.addAttribute("article", article);
 		model.addAttribute("actionUrl", "doModify");
 		
-		return "/usr/article/post";
+		return "board/post";
 		}
 		
 	@RequestMapping("/usr/article/doModify")
@@ -70,7 +72,7 @@ public class ArticleController {
 	@RequestMapping("/usr/article/post")
 	String ShowPost(Model model) {
 		model.addAttribute("actionUrl", "doPost");
-		return "/usr/article/post";
+		return "board/post";
 		}
 	
 	@RequestMapping("/usr/article/doPost")
