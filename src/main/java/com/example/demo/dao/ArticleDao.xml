@@ -21,16 +21,31 @@ WHERE id = #{id}
 
 <update id="modifyArticle">
 UPDATE article
-<set> 
-	updateDate = now(),
-	<if test="title != null">
-		title = #{title},
-	</if>
-	<if test="content != null">
-		content = #{content},
-	</if>
-</set>
+	<set> 
+		updateDate = now(),
+		<if test="title != null">
+			title = #{title},
+		</if>
+		<if test="content != null">
+			content = #{content},
+		</if>
+	</set>
 WHERE id = #{id}
 </update>
+
+<!-- 생성한 id값 가져오기 -->
+<insert id="writeArticle" useGeneratedKeys="true" keyProperty="id">
+INSERT INTO article
+	<set> 
+		regDate = NOW(),
+		updateDate = NOW(),
+		<if test="title != null">
+			title = #{title},
+		</if>
+		<if test="content != null">
+			content = #{content},
+		</if>
+	</set>
+</insert>
 
 </mapper>
