@@ -60,11 +60,18 @@ String doModify(int id, String title, String content) {
 	return String.format("<script> alert('%d번 글을 수정하였습니다.'); location.replace('/usr/article/detail?id=%d') </script>", id, id);
 	}
 
-@RequestMapping("/usr/article/doWrite")
+@RequestMapping("/usr/article/post")
+String ShowPost() {
+
+	return "/usr/article/post";
+	}
+
+
+@RequestMapping("/usr/article/doPost")
 @ResponseBody
-String doWrite(@RequestParam Map<String, Object> param) {
+String doPost(@RequestParam Map<String, Object> param) {
 	//글이 생성될 때 id 값을 받아와야 함
-	int id = articleService.writeArticle(param);
+	int id = articleService.postArticle(param);
 	
 	return String.format("<script> alert('%d번 글이 생성되었습니다.'); location.replace('/usr/article/detail?id=%d') </script>", id, id);
 	}

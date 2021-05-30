@@ -27,8 +27,8 @@ public class ArticleService {
 	public void modifyArticle(int id, String title, String content) {
 		articleDao.modifyArticle(id, title, content);	
 	}
-	public int writeArticle(Map<String, Object> param) {
-		articleDao.writeArticle(param);	
+	public int postArticle(Map<String, Object> param) {
+		articleDao.postArticle(param);	
 		
 		// id값이 BigInt 값이라서 int 값으로 변환해주어야 함.
 		//BigInteger bigIntId = (BigInteger)param.get("id");

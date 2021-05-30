@@ -19,5 +19,5 @@ public interface ArticleDao {
 
 	void modifyArticle(@Param("id") int id,@Param("title") String title,@Param("content") String content);
 
-	void writeArticle(Map<String, Object> param);
+	void postArticle(Map<String, Object> param);
 }
