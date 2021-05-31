@@ -4,7 +4,9 @@ spring:
   mvc:
     view:
       prefix: /WEB-INF/jsp/
-      suffix: .jsp
+      suffix: .jsp    static-path-pattern: /static/**  # 정적 리소스 경로 지정
+  resources:    static-locations:    - classpath:/static/
+    add-mappings: true  
   datasource:
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     url: jdbc:log4jdbc:mysql://127.0.0.1:3306/value_demo?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul&useOldAliasMetadataBehavior=true&zeroDateTimeNehavior=convertToNull
@@ -12,6 +14,7 @@ spring:
     password: 1234
 mybatis:
   type-aliases-package: com.example.demo.dto
+  mapper-locations:  - /mapper/*.xml        # 맵퍼 경로 지정
 server:
   error:
     include-exception: true
@@ -19,11 +22,10 @@ server:
     include-message: always
     include-binding-errors: always
 custom:
-  siteName: 벨류데모
+  siteName: 가치코딩데모
   logging:
     dir: log
     level: info
-
 ---
 
 server:

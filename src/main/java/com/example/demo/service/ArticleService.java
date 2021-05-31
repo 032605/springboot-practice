@@ -6,8 +6,8 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.dao.ArticleDao;
 import com.example.demo.dto.Article;
+import com.example.demo.mapper.ArticleDao;
 import com.example.demo.util.Util;
 
 @Service
