@@ -18,7 +18,7 @@ Spring 버전 3 이후 JAVA 클래스 파일을 이용한 설정 지원 > Java �
 → web.xml의 파일 삭제 및 스프링 관련 파일 삭제 (web.xml + servlet-context.xml + root--context.xml)
 → pom.xml의 수정 및 스프링 버전 변경 
 
-''' XML
+~~~ xml
  <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
@@ -28,13 +28,14 @@ Spring 버전 3 이후 JAVA 클래스 파일을 이용한 설정 지원 > Java �
                 </configuration>
 </plugin>
 
-'''
+~~~
 
 
 → JAVA 설정 관련 패키지 생성 (Configuration.java)
 
 
-''' JAVA
+~~~ java
+
 package com.hustar.value_coding_boot.configuration;
 
 
@@ -101,5 +102,5 @@ public class DatabaseConfiguration {
     }
     
 }
-'''
+~~~
 
