@@ -5,13 +5,13 @@ spring boot with MariaDB
 JDK (JAVA 8), STS, MariaDB
 
 # 개발 중 참고 사항 
-1. Service(Interface)와 ServiceImpl(Class)를 분리하는 이유 
+### 1. Service(Interface)와 ServiceImpl(Class)를 분리하는 이유 
 : 객체지향 프로그래밍에서는 클래스를 작게 나누어 다른 클래스와 의존관계를 낮추는것이 중요 (즉, 결합도를 낮추는것. 유지보수 용이)
-## Controller에서 ServiceImpl를 참조해야하며, Service가 아닌 ServiceImpl에 @Service 어노테이션을 적어주어야함
+#### ***Controller에서 ServiceImpl를 참조해야하며, Service가 아닌 ServiceImpl에 @Service 어노테이션을 적어주어야함***
 
-2. Maven/Gradle -> Update Project
+### 2. Maven/Gradle -> Update Project
 
-3. Configuration.java
+### 3. Configuration.java
 : Eclipse(STS)를 통해 생성하는 'Spring Legacy project'의 경우 XML으로 스프링 관련 설정
 Spring 버전 3 이후 JAVA 클래스 파일을 이용한 설정 지원 > Java 활용 설정 증가
 
