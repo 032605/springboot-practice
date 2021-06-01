@@ -59,7 +59,9 @@ import com.zaxxer.hikari.HikariDataSource;
 @PropertySource("classpath:/application.properties") //	해당 클래스에서 참조할 properties 파일의 위치를 지정
 public class DatabaseConfiguration {
 
-    //②
+  // 바로 위! application.properties에 설정했던 데이터베이스 관련 정보를 사용하도록 지정한다.
+ 	//@ConfigurationProperties 어노테이션에 prefix가 spring.datasource.hikari로 설정되었기 때문에 
+	//spring.datasource.hikari로 시작하는 설정을 이용해서 히카리CP의 설정파일을 만든다.
     @Bean
     @ConfigurationProperties(prefix="spring.datasource.hikari") //해당 애너테이션은 인자에 prefix 속성을 지정
     public HikariConfig hikariConfig() {
@@ -75,7 +77,7 @@ public class DatabaseConfiguration {
         return dataSource;
     }
     
-    @Autowired
+    @Autowired   //bean 객체 생성 및 관리 (beanfactory를 상속)
     public ApplicationContext applicationContext;
     
     
