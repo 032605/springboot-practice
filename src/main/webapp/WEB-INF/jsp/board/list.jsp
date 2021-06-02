@@ -3,14 +3,15 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
  <!-- 상단 헤더 불러오기 -->
  <jsp:include page="../header.jsp"></jsp:include>
-<body>
+
 <div class="content">
 <div class="notice-wrap">
 <div class="notice-box">
 
 <!-- 로그인 세션 확인 방법 ${sessionScope }  -->
 
-  <a href="<c:url value='/member/join' />"><h2>안녕하세요! <span class="name"> ${name }</span>님!</h2> </a>
+			
+  <h2>안녕하세요! <span class="name"> ${name }</span>님!</h2>
   <h1>게시물 리스트</h1>
       <div class="serch-box">
           <input type="text">

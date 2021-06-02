@@ -3,7 +3,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
  <!-- 상단 헤더 불러오기 -->
  <jsp:include page="../header.jsp"></jsp:include>
-<body>
+
+
 <div class="circle-small"></div>
 <div class="circle-big"></div>
 
