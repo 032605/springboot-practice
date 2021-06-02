@@ -26,7 +26,11 @@ public class Util {
 		return defaultValue;
 	}
 
-	public static String getAsStr(Object object, String string) {
+	public static String getAsStr(Object object, String defaultValue) {
+		if (object == null ) {
+			return defaultValue;
+		}
+		
 		// String일 경우
 		if (object instanceof String ) {
 			return (String) (object);

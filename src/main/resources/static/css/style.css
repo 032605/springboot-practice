@@ -66,6 +66,29 @@ img {
 
 .button{width: 30px; margin:0 auto;}
 
+/*login 로그인 */
+.login-box{margin: 200px auto; text-align: center;}
+.login-box .login{max-width: 500px; margin: 20px auto; border: 1px solid #e1e1e1; padding: 20px; background: #fff; display: grid; }
+.login-box .login input{margin: 10px 0; width: 100%; height: 40px; }
+
+.login input[type="checkbox"]{ width: 20px;}
+
+#chk-notice{width:20px;}
+
+.login button{width: 100%; height: 40px; background: #c3323a; border: 1px solid #90a17e; color: #fff;}
+
+/*---------SNS Login API-----------------------------------------------------------*/
+.login-box img{
+width: 220px;
+height: auto;
+margin-top: 10px;
+}
+.login-box .findIdPw a{
+padding: 5px 10px 5px 10px;
+border-right: 1px solid #ccc;
+}
+.login-box .findIdPw a:last-child{border: 0;}
+
 
   /* 게시판 */
   .content{max-width: 1200px; margin: 0 auto;}
