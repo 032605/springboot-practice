@@ -6,4 +6,5 @@
 <meta charset="UTF-8">
 <title>가치코딩 .</title>
 <link rel="stylesheet" href="/static/css/style.css">
+<script src="/static/js/main.js"></script>
 </head>

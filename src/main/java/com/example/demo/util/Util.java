@@ -26,4 +26,11 @@ public class Util {
 		return defaultValue;
 	}
 
+	public static String getAsStr(Object object, String string) {
+		// String일 경우
+		if (object instanceof String ) {
+			return (String) (object);
+		} // String이 아닐 경우 string으로 변환
+		return object.toString();
+	}
 }

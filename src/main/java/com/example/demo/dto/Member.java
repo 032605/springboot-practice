@@ -10,5 +10,5 @@ public class Member {
 	private String me_id;
 	private String me_password;
 	private String me_nickname;
-	private int me_singup_type;
+	//private int me_singup_type;
 }
