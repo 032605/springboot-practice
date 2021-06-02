@@ -49,6 +49,24 @@ img {
     width: auto\9;
 }
 
+/*join 회원가입 */
+.join-box{width: 480px; margin: 60px auto; }
+.join-box h1{text-align: center;}
+.join-box .join{ max-width: 500px; margin: 20px auto; border: 1px solid #e1e1e1; padding: 20px; background: #fff; display: grid; }
+.join-box .join span{margin-top: 10px;}
+.join-box .join input{margin: 10px 0px; height: 40px; }
+
+.join-box .join .checkDevLangDiv{margin: 10px 0; border: 1px solid #7d7d7d; }
+.join-box .join input[type="checkbox"]{margin: 10px 5px; height: 20px; }
+.join-box ul li{float: left; width: 33.33%; } /*3개 한 줄 차지*/
+.join-box ul li:nth-child(3n+1) { clear: both; } /*4번째부터 스타일 초기화해서 다음 줄에 배치 */
+
+.join button{width: 100%; height: 40px; background: #c3323a; border: 1px solid #7d7d7d; color: #fff;}
+.join-box a{text-align: center;}
+
+.button{width: 30px; margin:0 auto;}
+
+
   /* 게시판 */
   .content{max-width: 1200px; margin: 0 auto;}
   
