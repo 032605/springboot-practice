@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.MemberMapper">
+
+<!-- 생성한 id값 가져오기 -->
+<!-- 게시글 등록 -->
+<insert id="join" useGeneratedKeys="true" keyProperty="id">
+INSERT INTO t_member
+	<set> 
+		<if test="me_id != null">
+			me_id = #{me_id},
+		</if>
+		<if test="me_password != null">
+			me_password = #{me_password},
+		</if>
+		<if test="me_nickname != null">
+			me_nickname = #{me_nickname},
+		</if>
+	</set>
+</insert>
+
+</mapper>
