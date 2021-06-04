@@ -15,7 +15,7 @@
 <div class="header" data-aos="fade-down" data-aos-delay="300">
 	<!-- 로고, 메뉴 -->
 	<div class="header-box">
-		<h1 class="logo"><a href="/"><span>공부 .</span></a></h1>
+		<h1 class="logo"><a href="<c:url value='/usr/article/list' />"><span>공부 .</span></a></h1>
 
 		<div class="cursor">
 		</div>
