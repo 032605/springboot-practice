@@ -56,6 +56,16 @@ public class MemberController {
 		// 확인용 return param.toString();
 	}
 	
+	@RequestMapping("member/doLogout")
+	@ResponseBody
+	String dologout(HttpSession session) {
+ 
+		session.removeAttribute("loginedMemberId");
+		
+		return String.format("<script> location.replace('/usr/article/list') </script>");
+	}
+	
+	
 	@RequestMapping("member/join")
 	String showjoin() {
 		return "member/join";

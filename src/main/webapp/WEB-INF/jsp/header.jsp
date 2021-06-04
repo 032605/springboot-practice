@@ -5,13 +5,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>가치코딩 .</title>
+<title>가치코딩 . ${title}</title>
 <link rel="stylesheet" href="/static/css/style.css">
 <script src="/static/js/main.js"></script>
 </head>
 
 <body>
 
+
+<!-- ${sessionScope } -->
 <div class="header" data-aos="fade-down" data-aos-delay="300">
 	<!-- 로고, 메뉴 -->
 	<div class="header-box">
@@ -22,13 +24,15 @@
 
 		<div class="tnb">
 			<ul>
+			<c:if test="${sessionScope.loginedMemberId > 0}">
+				<li><a href="/member/doLogout">로그아웃</a></li>
+				<li><a href="./member/mypage">마이페이지</a></li>
+				<h2>안녕하세요! <span class="name"> <c:out value="${name}" /></span>님!</h2>
+			</c:if>
+			<c:if test="${not (sessionScope.loginedMemberId > 0)}">
 				<li><a href="<c:url value='../../member/login' />">로그인</a></li>
 				<li><a href="<c:url value='../../member/join' />">회원가입</a></li>
-				<li><a href="./member/mypage">마이페이지</a></li>
-				<!--
-				<li><a href="#none">로그아웃</a></li>
-				<li><a href="#none">정보수정</a></li>
-				-->
+			</c:if>
 			</ul>
 		</div>
 
